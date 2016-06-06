@@ -1,0 +1,20 @@
+{{#if propTypes}}
+import React, { PropTypes } from 'react';
+{{else}}
+import React from 'react';
+{{/if}}
+
+{{#if propTypes}}
+const propTypes = {};
+{{/if}}
+
+function {{ properCase name }}({}) {
+  return (
+    <div>
+    </div>
+  );
+}
+
+{{ properCase name }}.propTypes = propTypes;
+
+export default {{ properCase name }};

@@ -1,0 +1,16 @@
+import { fromJS } from 'immutable';
+import { assert } from 'meteor/practicalmeteor:chai';
+
+import { DEFAULT_ACTION } from '../constants.js';
+import {{ camelCase name }}Reducer from '../reducer';
+
+describe('{{ camelCase name }}Reducer', () => {
+  it('returns the initial state', () => {
+    const action = {};
+    const initialState = undefined;
+    const nextState = {{ camelCase name }}Reducer(initialState, action);
+    const finalState = fromJS({});
+
+    assert(nextState, finalState);
+  });
+});

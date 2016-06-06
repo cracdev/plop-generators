@@ -1,0 +1,15 @@
+import { assert } from 'meteor/practicalmeteor:chai';
+
+import * as actions from '../actions.js';
+import { DEFAULT_ACTION } from '../constants.js';
+
+describe('{{ properCase name }} actions', () => {
+  it('defaultAction should create DEFAULT_ACTION action', () => {
+    const actionCreator = actions.defaultAction();
+    const action = {
+      type: DEFAULT_ACTION,
+    };
+
+    expect(actionCreator, action);
+  });
+});

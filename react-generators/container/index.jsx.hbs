@@ -1,0 +1,40 @@
+{{#if propTypes}}
+import React, { Component, PropTypes } from 'react';
+{{else}}
+import React, { Component } from 'react';
+{{/if}}
+import { connect } from 'react-redux';
+
+export class {{ properCase name }} extends Component {
+  {{#if propTypes}}
+  static propTypes = {};
+  {{/if}}
+
+  render() {
+    {{#if propTypes}}
+    const {} = this.props;
+    {{/if}}
+
+    return (
+      <div>
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+
+  }
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)({{ properCase name }});
